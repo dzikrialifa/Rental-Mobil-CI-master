@@ -2,7 +2,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Rental Mobil</span></a>
+              <a href="<?= base_url('admin') ?>" class="site_title"><i class="fa fa-paw"></i> <span>Rental Mobil</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -26,16 +26,16 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Home </a></li>
-                  <li><a><i class="fa fa-edit"></i> Kendaraan </a>
+                  <li><a href="<?= base_url('admin') ?>"><i class="fa fa-home"></i> Home </a></li>
+                  <li><a href="<?= base_url('admin/bus') ?>"><i class="fa fa-car"></i> Kendaraan </a>
                   </li>
-                  <li><a><i class="fa fa-desktop"></i> Tipe Kendaraan </a>
+                  <li><a href="<?= base_url('admin/tipe') ?>"><i class="fa fa-list"></i> Tipe Kendaraan </a>
                   </li>
-                  <li><a><i class="fa fa-table"></i> Seat </a>
+                  <li><a href="<?= base_url('admin/seat') ?>"><i class="fa fa-tag"></i> Seat </a>
                   </li>
-                  <li><a><i class="fa fa-bar-chart-o"></i> Tagihan </a>
+                  <li><a href="<?= base_url('admin/tagihan') ?>"><i class="fa fa-barcode"></i> Tagihan </a>
                   </li>
-                  <li><a><i class="fa fa-sign-out"></i> Logout </a></li>
+                  <li><a href="<?= base_url('logout') ?>"><i class="fa fa-sign-out"></i> Logout </a></li>
                 </ul>
               </div>
 
