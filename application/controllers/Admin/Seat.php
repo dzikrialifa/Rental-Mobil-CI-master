@@ -64,6 +64,12 @@ class Seat extends MY_Controller {
 			// view
 			$this->admin_template($var);
 			$this->load->view('admin/part/seat/index');
+
+			// NEW TEMPLATE 
+			// $this->load->view('admin/template/header');
+			// $this->load->view('admin/template/sidebar');
+			// $this->load->view('admin/part/seat/indexx');
+			// $this->load->view('admin/template/footer');
 			
 		}else
 			{

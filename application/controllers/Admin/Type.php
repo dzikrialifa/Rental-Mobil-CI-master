@@ -65,6 +65,7 @@ class Type extends MY_Controller {
 			// $this->admin_template($var);
 			// $this->load->view('admin/part/type/index');
 
+			// NEW TEMPLATE
 			$this->load->view('admin/template/header');
 			$this->load->view('admin/template/sidebar');
 			$this->load->view('admin/part/type/indexx');

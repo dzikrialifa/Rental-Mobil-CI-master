@@ -69,6 +69,12 @@ class Bus extends MY_Controller {
 			// view
 			$this->admin_template($var);
 			$this->load->view('admin/part/bus/index', $var);
+
+			// // NEW TEMPLATE
+			// $this->load->view('admin/template/header');
+			// $this->load->view('admin/template/sidebar');
+			// $this->load->view('admin/part/bus/indexx');
+			// $this->load->view('admin/template/footer');
 			
 		}else
 			{
