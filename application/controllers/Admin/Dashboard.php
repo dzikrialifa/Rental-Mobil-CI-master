@@ -37,24 +37,24 @@ class Dashboard extends MY_Controller {
 		if ($this->is_logged_in()) 
 		{
 			// data variable untuk passing ke view
-			$var['title_web'] 	= $this->web_title();
-			$var['page_web']  	= 'Beranda';
+			// $var['title_web'] 	= $this->web_title();
+			// $var['page_web']  	= 'Beranda';
 
-			$var['graphic_data'] = $this->minvoice->graphic();
+			// $var['graphic_data'] = $this->minvoice->graphic();
 
-			$var['pend'] = count($this->minvoice->load_pend());
-			$var['conf'] = count($this->minvoice->load_conf());
-			$var['cancel'] = count($this->minvoice->load_cancel());
+			// $var['pend'] = count($this->minvoice->load_pend());
+			// $var['conf'] = count($this->minvoice->load_conf());
+			// $var['cancel'] = count($this->minvoice->load_cancel());
 
-			// tampilan
-			$this->admin_template($var);
-			$this->load->view('admin/part/home/index', $var);
+			// // tampilan
+			// $this->admin_template($var);
+			// $this->load->view('admin/part/home/index', $var);
 
 			// // NEW TEMPLATE
-			// $this->load->view('admin/template/header');
-			// $this->load->view('admin/template/sidebar');
-			// $this->load->view('admin/template/index');
-			// $this->load->view('admin/template/footer');
+			$this->load->view('admin/template/header');
+			$this->load->view('admin/template/sidebar');
+			$this->load->view('admin/template/index');
+			$this->load->view('admin/template/footer');
 			
 		}else
 			{

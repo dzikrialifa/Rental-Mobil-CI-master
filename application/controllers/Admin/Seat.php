@@ -58,18 +58,18 @@ class Seat extends MY_Controller {
 		if ($this->is_logged_in()) 
 		{
 			// data
-			$var['title_web'] 	= $this->web_title();
-			$var['page_web']  	= 'Seat Kendaraan';
+			// $var['title_web'] 	= $this->web_title();
+			// $var['page_web']  	= 'Seat Kendaraan';
 
-			// view
-			$this->admin_template($var);
-			$this->load->view('admin/part/seat/index');
+			// // view
+			// $this->admin_template($var);
+			// $this->load->view('admin/part/seat/index');
 
 			// NEW TEMPLATE 
-			// $this->load->view('admin/template/header');
-			// $this->load->view('admin/template/sidebar');
-			// $this->load->view('admin/part/seat/indexx');
-			// $this->load->view('admin/template/footer');
+			$this->load->view('admin/template/header');
+			$this->load->view('admin/template/sidebar');
+			$this->load->view('admin/part/seat/indexx');
+			$this->load->view('admin/template/footer');
 			
 		}else
 			{

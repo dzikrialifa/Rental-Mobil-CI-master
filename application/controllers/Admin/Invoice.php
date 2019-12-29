@@ -59,18 +59,18 @@ class Invoice extends MY_Controller {
 		if ($this->is_logged_in()) 
 		{
 			// data
-			$var['title_web'] 	= $this->web_title();
-			$var['page_web']  	= 'Tagihan';
+			// $var['title_web'] 	= $this->web_title();
+			// $var['page_web']  	= 'Tagihan';
 
-			// view
-			$this->admin_template($var);
-			$this->load->view('admin/part/invoice/index');
+			// // view
+			// $this->admin_template($var);
+			// $this->load->view('admin/part/invoice/index');
 
-			// // NEW TEMPLATE
-			// $this->load->view('admin/template/header');
-			// $this->load->view('admin/template/sidebar');
-			// $this->load->view('admin/part/invoice/indexx');
-			// $this->load->view('admin/template/footer');
+			// NEW TEMPLATE
+			$this->load->view('admin/template/header');
+			$this->load->view('admin/template/sidebar');
+			$this->load->view('admin/part/invoice/indexx');
+			$this->load->view('admin/template/footer');
 			
 		}else
 			{

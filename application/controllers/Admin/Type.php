@@ -58,18 +58,18 @@ class Type extends MY_Controller {
 		if ($this->is_logged_in()) 
 		{
 			// data
-			$var['title_web'] 	= $this->web_title();
-			$var['page_web']  	= 'Tipe Kendaraan';
+			// $var['title_web'] 	= $this->web_title();
+			// $var['page_web']  	= 'Tipe Kendaraan';
 
-			// view
-			$this->admin_template($var);
-			$this->load->view('admin/part/type/index');
+			// // view
+			// $this->admin_template($var);
+			// $this->load->view('admin/part/type/index');
 
-			// // NEW TEMPLATE
-			// $this->load->view('admin/template/header');
-			// $this->load->view('admin/template/sidebar');
-			// $this->load->view('admin/part/type/indexx');
-			// $this->load->view('admin/template/footer');
+			// NEW TEMPLATE
+			$this->load->view('admin/template/header');
+			$this->load->view('admin/template/sidebar');
+			$this->load->view('admin/part/type/indexx');
+			$this->load->view('admin/template/footer');
 			
 		}else
 			{
